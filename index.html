@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>First Project</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">Web Topics</a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <button id="darkmode-btn" onclick="changecolor()">
+              <span>
+                <ion-icon name="moon-outline"></ion-icon>
+              </span>
+              <span>Dark Mode</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <span><ion-icon name="heart-outline"></ion-icon></span>
+              <span>Favorite</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="shapes">
+      <div class="shape">
+        <div class="first-triangle"></div>
+        <div class="second-triangle"></div>
+      </div>
+      <h3>Welcome to our website!</h3>
+
+      <p>We have a new design that's fresh, modern, and easy to use.</p>
+    </section>
+    <main>
+      <section class="search">
+        <input type="text" placeholder="Search the website..." />
+      </section>
+      <section class="serach-found">
+        <h4>"24" Web Topics Found</h4>
+      </section>
+      <section class="cards" id="cards">
+     
+     
+           </section>
+    </main>
+
+
+
+    <footer>
+      <p>Developed with <ion-icon name="heart" class="he"></ion-icon> 	&copy; 2023</p>
+    </footer>
+    <script src="index.js"></script>
+    </body>
+</html>

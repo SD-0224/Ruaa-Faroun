@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #ffffff;
+  --bg_body: #f0f9ff;
+  --lines-color: #dddddd;
+  --body-text: #333333;
+  --heart-color: #dc143c;
+}
+
+.dark-mode {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #1a1a1a;
+  --bg_body: #282828;
+  --lines-color: #000000;
+  --body-text: #ededed;
+  --heart-color: #dc143c;
+}
+
+body {
+  height: fit-content;
+  /* max-width: 100vw; */
+  overflow-x: hidden;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--body-text);
+}
+
+header {
+  padding: 12px 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1024;
+  background-color: var(--bg_default);
+}
+header div,
+header nav {
+  width: 50%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+}
+.logo a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+header nav {
+  justify-content: flex-end;
+}
+ul {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+}
+button {
+  color: var(--body-text);
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--lines-color);
+  background-color: var(--bg_default);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+div {
+  width: 100%;
+  height: 50px;
+}
+section.shapes {
+  height: 95px;
+  background-color: var(--bg_default);
+  /* position: relative; */
+}
+section.shapes .shape {
+  /* background-color: blueviolet; */
+  overflow: visible;
+  position: relative;
+  height: 36px;
+}
+
+.first-triangle {
+  background: linear-gradient(to right, #0768ac, #03c180);
+  height: 71px;
+  position: absolute;
+  content: "";
+  /* left: -78px;
+  top: -42px; */
+  left: -4px;
+  top: -48px;
+  transform: rotate3d(1, 1, 1, 355deg);
+  z-index: 500;
+}
+
+.second-triangle {
+  background: linear-gradient(to left, #03c180, #0768ac);
+  height: 71px;
+  position: absolute;
+  content: "";
+  right: -6px;
+  top: -48px;
+  transform: rotate3d(1, 1, 1, 5deg);
+}
+h3 {
+  text-align: center;
+  color: var(--brand-secondary);
+  font-weight: bold;
+  font-size: 26px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -128px; */
+}
+p {
+  text-align: center;
+}
+main {
+  /* height: 500px; */
+  background-color: var(--bg_body);
+  padding: 20px 50px;
+}
+section.search {
+  width: 100%;
+}
+
+section input {
+  background-color: var(--bg_default);
+  width: 95%;
+  padding: 12px;
+  outline: none;
+  border: 2px solid var(--lines-color);
+  border-radius: 5px;
+}
+section h4 {
+  text-align: left;
+}
+main section {
+  margin: 20px 0;
+  font-size: 22px;
+}
+.cards {
+  /* height: 100%; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* problem */
+  /* justify-content: space-between; */
+  /* gap: 40px 0; */
+  /* padding: 0 50px; */
+}
+.card {
+  background-color: var(--bg_default);
+  width: calc((100vw - 80px) / 6);
+  margin-right: 25px;
+  margin-bottom: 20px;
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--lines-color);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.card .author-name {
+  /* color: var(--lines-color); */
+  font-weight: 300;
+  font-size: 16px;
+}
+.card .info {
+  width: 100%;
+  height: fit-content;
+  padding: 0 0 0 20px;
+}
+.card .info * {
+  text-align: left;
+  font-size: 16px;
+}
+.card .info h6 {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.card .description {
+  margin: 3px 0;
+}
+.card .img {
+  width: 100%;
+  height: 50%;
+}
+.card .img img {
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.rating {
+  height: fit-content;
+  margin: 40px 0 5px 0;
+}
+
+/* .shapes p {
+  text-align: right;
+} */
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: var(--bg_body);
+}
+
+footer p .he {
+  color: var(--heart-color);
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 10px var(--bg_default);
+}
+
+.course {
+  /* width: 70%; */
+  padding: 50px 150px;
+  background-color: var(--body-text);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50%;
+  min-height: 100%;
+}
+
+.course .desc {
+}
+
+.course .desc .tit {
+  color: var(--brand-secondary);
+}
